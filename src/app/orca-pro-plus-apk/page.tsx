@@ -136,6 +136,10 @@ export default function OrcaProPlusAPKPage() {
               </div>
               <div className="bg-slate-900 border border-green-500/30 rounded-2xl overflow-hidden">
                 <Image src="/hero-bg.webp" alt="ProMax TV Player APK" width={300} height={160} className="w-full object-cover" />
+                <div className="p-3 text-center">
+                  <div className="text-green-400 font-bold text-sm">✅ ProMax TV Player</div>
+                  <div className="text-gray-400 text-xs">Actif · 99.9%</div>
+                </div>
               </div>
             </div>
           </div>
