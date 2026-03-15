@@ -69,17 +69,39 @@ export default function CheckoutModal({ pack, onClose }: Props) {
 
         {submitted ? (
           <div className="p-8 text-center">
-            <div className="text-5xl mb-4">✅</div>
-            <h3 className="text-white font-bold text-xl mb-3">Commande reçue !</h3>
-            <p className="text-gray-300 mb-3">
-              Merci pour votre commande. Vous recevrez une confirmation par email sous peu.
-            </p>
-            <p className="text-yellow-400 text-sm bg-yellow-900/20 border border-yellow-700/30 rounded-xl p-3">
-              ⚠️ Pensez à vérifier votre dossier spam/indésirables si vous ne recevez pas notre email dans les 5 minutes.
-            </p>
+            {/* Icône animée */}
+            <div className="flex items-center justify-center w-20 h-20 mx-auto mb-5 rounded-full bg-gradient-to-br from-green-500/20 to-emerald-500/10 border border-green-500/30">
+              <span className="text-4xl">✅</span>
+            </div>
+
+            <h3 className="text-white font-extrabold text-2xl mb-2">Commande reçue !</h3>
+            <p className="text-gray-400 text-sm mb-6">Merci <span className="text-white font-semibold">{form.name}</span> pour votre confiance.</p>
+
+            {/* Bloc principal */}
+            <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5 mb-4 text-left space-y-3">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl mt-0.5">📧</span>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Votre commande est en cours de traitement. Vous recevrez un <strong className="text-white">lien dans votre e-mail</strong> qui vous permettra de régler la commande.
+                </p>
+              </div>
+            </div>
+
+            {/* Bloc avertissement SPAM */}
+            <div className="bg-orange-950/40 border border-orange-500/40 rounded-2xl p-4 mb-6 text-left">
+              <div className="flex items-start gap-2">
+                <span className="text-orange-400 text-lg mt-0.5">⚠️</span>
+                <p className="text-orange-300 text-sm leading-relaxed">
+                  <strong className="text-orange-200">IMPORTANT !!</strong> — Si vous n&apos;avez pas reçu votre Abonnement sur la partie inbox{" "}
+                  <strong className="text-orange-200">(BOITE DE RECEPTION)</strong> merci de vérifier aussi vos{" "}
+                  <strong className="text-orange-200 uppercase">SPAM</strong>.
+                </p>
+              </div>
+            </div>
+
             <button
               onClick={onClose}
-              className="mt-6 px-6 py-3 rounded-xl bg-gradient-to-r from-red-600 to-orange-500 text-white font-semibold"
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-red-600 to-orange-500 text-white font-bold hover:from-red-500 hover:to-orange-400 transition-all"
             >
               Fermer
             </button>

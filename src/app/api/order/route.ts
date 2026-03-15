@@ -26,8 +26,7 @@ function clientEmailHtml(data: OrderBody): string {
     <div style="background:#0f172a;border:1px solid #1e293b;border-radius:16px;padding:28px;margin-bottom:24px">
       <h2 style="color:#f1f5f9;font-size:18px;margin-top:0">Bonjour ${data.name},</h2>
       <p style="color:#94a3b8;line-height:1.6">
-        Nous avons bien reçu votre commande pour le <strong style="color:#f1f5f9">${data.packName}</strong>.
-        Notre équipe va traiter votre demande et vous envoyer votre code IPTV très prochainement.
+        Votre commande est en cours de traitement. Vous recevrez un lien dans votre e-mail qui vous permettra de régler la commande.
       </p>
       <div style="background:#1e293b;border-radius:12px;padding:20px;margin:20px 0">
         <p style="margin:0 0 8px;color:#64748b;font-size:12px;text-transform:uppercase;letter-spacing:0.05em">Résumé de commande</p>
@@ -39,8 +38,12 @@ function clientEmailHtml(data: OrderBody): string {
         Pour toute question, contactez-nous sur WhatsApp : <a href="https://wa.me/212667451586" style="color:#4ade80">+212 667-451586</a>
       </p>
     </div>
+    <div style="background:#431407;border:1px solid #ea580c;border-radius:12px;padding:16px;margin-bottom:24px">
+      <p style="margin:0;color:#fed7aa;font-size:13px;line-height:1.6">
+        ⚠️ <strong>IMPORTANT !!</strong> — Si vous n'avez pas reçu votre Abonnement sur la partie inbox (BOITE DE RECEPTION) merci de vérifier aussi vos <strong>SPAM</strong>.
+      </p>
+    </div>
     <p style="color:#475569;font-size:12px;text-align:center">
-      ⚠️ Vérifiez votre dossier spam si vous ne recevez pas notre email de suivi.<br>
       © 2025 ProMax TV Player · promax-tv-player.com
     </p>
   </div>
