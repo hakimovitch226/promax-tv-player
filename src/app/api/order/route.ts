@@ -74,9 +74,9 @@ export async function POST(req: NextRequest) {
   try {
     const data: OrderBody = await req.json();
 
-    const resendApiKey = process.env.RESEND_API_KEY;
-    const adminEmail = process.env.ADMIN_EMAIL;
-    const fromEmail = process.env.FROM_EMAIL;
+    const resendApiKey = process.env.PROMAX_RESEND_API_KEY;
+    const adminEmail = process.env.PROMAX_ADMIN_EMAIL;
+    const fromEmail = process.env.PROMAX_FROM_EMAIL;
 
     if (!resendApiKey || !adminEmail || !fromEmail) {
       // Return success even without env vars — don't break user experience
