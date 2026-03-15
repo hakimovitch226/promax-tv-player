@@ -93,10 +93,12 @@ export default function OrcaProPlusPage() {
                 </div>
               </div>
               <div className="relative">
-                <div className="bg-slate-900 border border-green-500/30 rounded-2xl p-4 text-center">
-                  <Image src="/logo.png" alt="ProMax TV Player" width={140} height={140} className="rounded-xl mx-auto mb-3" />
-                  <div className="text-green-400 font-bold text-sm">✅ ProMax TV Player</div>
-                  <div className="text-gray-400 text-xs">Actif · 99.9% uptime</div>
+                <div className="bg-slate-900 border border-green-500/30 rounded-2xl overflow-hidden">
+                  <Image src="/hero-bg.webp" alt="ProMax TV Player" width={300} height={160} className="w-full object-cover" />
+                  <div className="p-3 text-center">
+                    <div className="text-green-400 font-bold text-sm">✅ ProMax TV Player</div>
+                    <div className="text-gray-400 text-xs">Actif · 99.9% uptime</div>
+                  </div>
                 </div>
               </div>
             </div>
