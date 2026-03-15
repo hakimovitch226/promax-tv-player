@@ -134,10 +134,8 @@ export default function OrcaProPlusAPKPage() {
                 <div className="text-red-400 font-bold text-sm">⛔ Orca Pro Plus APK</div>
                 <div className="text-gray-500 text-xs">Arrêté</div>
               </div>
-              <div className="bg-slate-900 border border-green-500/30 rounded-2xl p-4 text-center">
-                <Image src="/logo.png" alt="ProMax TV Player APK" width={120} height={120} className="rounded-xl mx-auto mb-3" />
-                <div className="text-green-400 font-bold text-sm">✅ ProMax TV Player</div>
-                <div className="text-gray-400 text-xs">Actif · 99.9%</div>
+              <div className="bg-slate-900 border border-green-500/30 rounded-2xl overflow-hidden">
+                <Image src="/hero-bg.webp" alt="ProMax TV Player APK" width={300} height={160} className="w-full object-cover" />
               </div>
             </div>
           </div>
