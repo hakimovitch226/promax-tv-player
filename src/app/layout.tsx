@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     "chaînes IPTV", "VOD IPTV", "Smart TV IPTV", "Firestick IPTV", "IPTV France",
   ],
   icons: { icon: "/logo.png", apple: "/logo.png" },
+  verification: { google: "LspfaYJtFqb0jz-w_pOm-A0RwzEgd72O6geqdQzGQU8" },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://promax-tv-player.com" },
   openGraph: {
